@@ -1,0 +1,105 @@
+@colorWhite: #ffff;
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-container {
+  .flex();
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  max-width: 414px;
+  background-color: @colorWhite;
+  height: 75px;
+  margin-bottom: 2px;
+  z-index: 999;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  @media screen and (min-width: 768px) {
+    width: 483;
+  }
+}
+
+.header-logo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  padding-left: 40px;
+}
+.header-navigation {
+  display: flex;
+  gap: 20px;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    width: 70%;
+    height: 100vh;
+    right: 0;
+    padding-top: 20px;
+    background-color: @colorWhite;
+    z-index: 998;
+    pointer-events: none;
+    transition: transform 300ms ease-in-out, opacity 700ms ease-in-out;
+    transform: translateX(100%);
+
+    &.open {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .nav-item {
+      text-decoration: none;
+      color: #000;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #1e1e1e;
+      }
+      &:active {
+        color: #1e1e1e;
+      }
+    }
+  }
+}
+
+.BurgerIcon {
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    .burger-line {
+      width: 35px;
+      height: 5px;
+      background-color: #000;
+      margin: 3px;
+      margin-right: 20px;
+      transition: transform 300ms ease-in-out;
+    }
+
+    & .open:nth-child(1) {
+      transform: translateY(11px) rotate(45deg);
+    }
+
+    & .open:nth-child(2) {
+      opacity: 0;
+    }
+
+    & .open:nth-child(3) {
+      transform: translateY(-11px) rotate(-45deg);
+    }
+  }
+}
