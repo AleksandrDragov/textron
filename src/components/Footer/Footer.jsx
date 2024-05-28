@@ -46,7 +46,7 @@ function Footer() {
         </a>
       </div>
       <div className="footer-social">
-        <a href="#" className="footer-social-link">
+        <a href="https://shorturl.at/C1JJj" className="footer-social-link">
           <Icon
             id="facebook"
             width={30}
@@ -54,7 +54,7 @@ function Footer() {
             className="footer-social-icon"
           />
         </a>
-        <a href="#" className="footer-social-link">
+        <a href="https://shorturl.at/C1JJj" className="footer-social-link">
           <Icon id="instagram" width={30} height={30} />
         </a>
       </div>
