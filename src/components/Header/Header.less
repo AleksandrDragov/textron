@@ -1,16 +1,10 @@
-@colorWhite: #ffff;
-@isOpen: true;
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+@import '../../variables.less';
 .header-container {
   .flex();
   justify-content: space-between;
   position: sticky;
   top: 0px;
-  background-color: @colorWhite;
+  background-color: @white;
   height: 75px;
   width: 100%;
   margin-bottom: 2px;
@@ -24,17 +18,13 @@
     padding-right: 120px;
   }
   @media screen and (min-width: 1440px) {
-    width: 1168px;
+    width: 1268px;
   }
 }
 
 .header-logo {
-  font-family: 'Roboto', sans-serif;
+  .text();
   font-weight: 700;
-  font-style: italic;
-  font-size: 24px;
-  text-decoration: none;
-  color: black;
   padding-left: 40px;
   @media screen and (min-width: 768px) {
     font-size: 34px;
@@ -52,11 +42,11 @@
     align-items: center;
     position: absolute;
     top: 100%;
-    width: 70%;
+    width: 60%;
     height: 100vh;
     right: 0;
     padding-top: 20px;
-    background-color: @colorWhite;
+    background-color: @white;
     z-index: 998;
     pointer-events: none;
     opacity: 0;
@@ -71,19 +61,12 @@
     }
 
     .nav-item {
-      text-decoration: none;
-      color: #000;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 500;
-      font-size: 24px;
-      transition: color 0.3s ease;
-
+      .text();
       &:hover {
-        color: #1e1e1e;
+        .hover();
       }
-
       &:active {
-        color: #1e1e1e;
+        .hover();
       }
     }
   }
@@ -99,7 +82,7 @@
     .burger-line {
       width: 35px;
       height: 5px;
-      background-color: #000;
+      background-color: @black;
       margin: 3px;
       margin-right: 20px;
       transition: transform 300ms ease-in-out;
@@ -118,8 +101,19 @@
     }
   }
 }
-.nav-item {
-  @media screen and (min-width: 768px) {
-    font-size: 28px;
+
+@media screen and (min-width: 769px) {
+  .nav-item {
+    font-size: 24px;
+    &:hover {
+      .hover();
+    }
+    &.active {
+      .hover();
+      transform: scale(1.1);
+    }
+    &:active {
+      .hover();
+    }
   }
 }

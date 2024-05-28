@@ -1,5 +1,6 @@
 import './App.less';
 import Header from './Header/Header';
+import Footer from './Footer/Footer';
 export const App = () => {
   return (
     <div className="container">
@@ -9,7 +10,7 @@ export const App = () => {
       >
         hello there!
       </main>
-      <footer>footer</footer>
+      <Footer />
     </div>
   );
 };

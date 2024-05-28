@@ -29,16 +29,16 @@ function Header() {
         menuOpen={menuOpen}
       >
         <NavLink className="nav-item" to="/" onClick={closeMenu}>
-          home
+          Home
         </NavLink>
         <NavLink className="nav-item" to="/services" onClick={closeMenu}>
-          services
+          Services
         </NavLink>
         <NavLink className="nav-item" to="/projects" onClick={closeMenu}>
-          projects
+          Projects
         </NavLink>
         <NavLink className="nav-item" to="/contacts" onClick={closeMenu}>
-          contacts
+          Contacts
         </NavLink>
       </nav>
     </header>
