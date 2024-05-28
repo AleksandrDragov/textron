@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/building-Indusri/static/css/main.3db3741c.css",
+    "main.css": "/building-Indusri/static/css/main.7d75d85b.css",
     "main.js": "/building-Indusri/static/js/main.22df1ea4.js",
     "index.html": "/building-Indusri/index.html",
-    "main.3db3741c.css.map": "/building-Indusri/static/css/main.3db3741c.css.map",
+    "main.7d75d85b.css.map": "/building-Indusri/static/css/main.7d75d85b.css.map",
     "main.22df1ea4.js.map": "/building-Indusri/static/js/main.22df1ea4.js.map"
   },
   "entrypoints": [
-    "static/css/main.3db3741c.css",
+    "static/css/main.7d75d85b.css",
     "static/js/main.22df1ea4.js"
   ]
 }
