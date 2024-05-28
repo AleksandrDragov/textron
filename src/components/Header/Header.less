@@ -1,4 +1,5 @@
 @colorWhite: #ffff;
+@isOpen: true;
 .flex {
   display: flex;
   align-items: center;
@@ -9,16 +10,21 @@
   justify-content: space-between;
   position: sticky;
   top: 0px;
-  max-width: 414px;
   background-color: @colorWhite;
   height: 75px;
+  width: 100%;
   margin-bottom: 2px;
   z-index: 999;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-  @media screen and (max-width: 1024px) {
-    max-width: 100%;
-    padding-left: 20px;
-    padding-right: 50px;
+  @media screen and (min-width: 428px) {
+    width: 428px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 100vw;
+    padding-right: 120px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1168px;
   }
 }
 
@@ -30,13 +36,18 @@
   text-decoration: none;
   color: black;
   padding-left: 40px;
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-left: 120px;
+  }
 }
 .header-navigation {
   display: flex;
   gap: 20px;
 
-  @media screen and (max-width: 768px) {
-    display: flex;
+  @media screen and (max-width: 767px) {
     flex-direction: column;
     align-items: center;
     position: absolute;
@@ -47,16 +58,16 @@
     padding-top: 20px;
     background-color: @colorWhite;
     z-index: 998;
-    display: none;
     pointer-events: none;
+    opacity: 0;
+    transform: translateY(-100%);
     transition: transform 300ms ease-in-out, opacity 700ms ease-in-out;
-    transform: translateX(100%);
 
     &.open {
       opacity: 1;
       pointer-events: auto;
       transform: translateY(0);
-      display: flex;
+      transition: transform 300ms ease-in-out, opacity 700ms ease-in-out;
     }
 
     .nav-item {
@@ -70,6 +81,7 @@
       &:hover {
         color: #1e1e1e;
       }
+
       &:active {
         color: #1e1e1e;
       }
@@ -80,11 +92,10 @@
 .BurgerIcon {
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-
     .burger-line {
       width: 35px;
       height: 5px;
@@ -105,5 +116,10 @@
     & .open:nth-child(3) {
       transform: translateY(-11px) rotate(-45deg);
     }
+  }
+}
+.nav-item {
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
   }
 }
