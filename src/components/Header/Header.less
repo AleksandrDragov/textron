@@ -15,8 +15,10 @@
   margin-bottom: 2px;
   z-index: 999;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-  @media screen and (min-width: 768px) {
-    width: 483;
+  @media screen and (max-width: 1024px) {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 50px;
   }
 }
 
@@ -45,6 +47,7 @@
     padding-top: 20px;
     background-color: @colorWhite;
     z-index: 998;
+    display: none;
     pointer-events: none;
     transition: transform 300ms ease-in-out, opacity 700ms ease-in-out;
     transform: translateX(100%);
@@ -53,6 +56,7 @@
       opacity: 1;
       pointer-events: auto;
       transform: translateY(0);
+      display: flex;
     }
 
     .nav-item {
