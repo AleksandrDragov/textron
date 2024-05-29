@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/building-Indusri/static/css/main.81f1a572.css",
-    "main.js": "/building-Indusri/static/js/main.7d04c833.js",
-    "static/media/sprite.svg": "/building-Indusri/static/media/sprite.e8e4e886fbc1ae9c23a01a7d9f3095c5.svg",
+    "main.css": "/building-Indusri/static/css/main.fd3736de.css",
+    "main.js": "/building-Indusri/static/js/main.29d558a6.js",
+    "static/media/sprite.svg": "/building-Indusri/static/media/sprite.684f5a75f2ad4231b49a6a4cadb34600.svg",
     "index.html": "/building-Indusri/index.html",
-    "main.81f1a572.css.map": "/building-Indusri/static/css/main.81f1a572.css.map",
-    "main.7d04c833.js.map": "/building-Indusri/static/js/main.7d04c833.js.map"
+    "main.fd3736de.css.map": "/building-Indusri/static/css/main.fd3736de.css.map",
+    "main.29d558a6.js.map": "/building-Indusri/static/js/main.29d558a6.js.map"
   },
   "entrypoints": [
-    "static/css/main.81f1a572.css",
-    "static/js/main.7d04c833.js"
+    "static/css/main.fd3736de.css",
+    "static/js/main.29d558a6.js"
   ]
 }
