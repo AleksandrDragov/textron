@@ -21,7 +21,7 @@ function Footer() {
                 className="footer-contacts-icon"
               />
             </span>
-            <span className="contacts-text"></span>+420 777 777 777
+            <span className="footer-contacts-text">+420 777 777 777</span>
           </a>{' '}
           <br />
           <a className="footer-contacts-links" href="mailto:building@gmail.com">
@@ -33,7 +33,7 @@ function Footer() {
                 className="footer-contacts-icon"
               />
             </span>
-            <span className="contacts-text"></span>building@gmail.com
+            <span className="footer-contacts-text">building@gmail.com</span>
           </a>
           <br />
           <a className="footer-contacts-links" href="https://shorturl.at/C1JJj">
@@ -43,7 +43,7 @@ function Footer() {
               height={24}
               className="footer-contacts-icon"
             />
-            <span className="contacts-text"></span>Senovážné nám. 987/15
+            <span className="footer-contacts-text">Senovážné nám. 987/15</span>
           </a>
         </div>
         <div className="footer-social">
