@@ -1,15 +1,14 @@
 import './App.less';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
+import MainContainer from './MainContainer/MainContainer';
 export const App = () => {
   return (
     <div className="container">
       <Header />
-      <main
-        style={{ width: '100vw', height: '100vh', backgroundColor: '#D9D9D9' }}
-      >
-        hello there!
-      </main>
+      <MainContainer>
+        <div>Textron</div>
+      </MainContainer>
       <Footer />
     </div>
   );

@@ -6,19 +6,13 @@
   top: 0px;
   background-color: @white;
   height: 75px;
-  width: 100%;
+  width: 100vw;
   margin-bottom: 2px;
   z-index: 999;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-  @media screen and (min-width: 428px) {
-    width: 428px;
-  }
+  .shadow();
+  .containers();
   @media screen and (min-width: 768px) {
-    width: 100vw;
     padding-right: 120px;
-  }
-  @media screen and (min-width: 1440px) {
-    width: 1268px;
   }
 }
 
@@ -105,6 +99,7 @@
 @media screen and (min-width: 769px) {
   .nav-item {
     font-size: 24px;
+    transition: all 700ms ease-in-out;
     &:hover {
       .hover();
     }

@@ -1,7 +1,7 @@
 @white: #ffff;
 @black: #000;
 .grayish {
-  color: #1e1e1e;
+  fill: #1e1e1e;
   opacity: 70%;
 }
 .flex {
@@ -13,7 +13,7 @@
 .hover {
   .grayish();
   transform: scale(1.05);
-  transition: transform 300ms ease-in-out;
+  transition: transform 700ms ease-in-out;
 }
 .text {
   color: @black;
@@ -21,4 +21,20 @@
   font-weight: 500;
   font-size: 24px;
   font-style: italic;
+}
+
+.containers {
+  width: 100vw;
+  @media screen and (min-width: 428px) {
+    width: 100vw;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 1168px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1168px;
+  }
+}
+.shadow {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
