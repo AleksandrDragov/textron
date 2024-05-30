@@ -2,7 +2,7 @@ import './App.less';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import MainContainer from './MainContainer/MainContainer';
-
+import Partners from './Partners/Partners';
 import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 const Contacts = lazy(() => import('../Pages/Contacts/Contacts'));
@@ -17,6 +17,7 @@ export const App = () => {
           </Routes>
         </Suspense>
       </MainContainer>
+      <Partners />
       <Footer />
     </div>
   );
