@@ -1,4 +1,3 @@
-import image from '../../images/background.png';
 import './Hero.less';
 import React from 'react';
 import PropTypes from 'prop-types';
