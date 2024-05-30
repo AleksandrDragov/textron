@@ -1,7 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import Icon from 'components/Icon/Icon';
 import { Autoplay } from 'swiper/modules';
 import SwiperCore from 'swiper';
 import { partners } from './partners.data';
