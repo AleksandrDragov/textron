@@ -3,6 +3,7 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import MainContainer from './MainContainer/MainContainer';
 import Partners from './Partners/Partners';
+import BackCall from './BackCall/BackCall';
 import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 const Contacts = lazy(() => import('../Pages/Contacts/Contacts'));
@@ -18,6 +19,7 @@ export const App = () => {
         </Suspense>
       </MainContainer>
       <Partners />
+      <BackCall />
       <Footer />
     </div>
   );

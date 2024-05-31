@@ -1,0 +1,49 @@
+@import '../../variables.less';
+.backCall-container {
+  .flex();
+  flex-direction: column;
+  .containers();
+  .shadow();
+  background-color: #d9d9d9;
+  padding-bottom: 20px;
+}
+.backCall-title {
+  .text();
+  font-weight: 700;
+  font-size: 34px;
+  @media screen and (max-width: 414px) {
+    font-size: 24px;
+  }
+}
+.backCall-form {
+  .flex();
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.backCall-inputWrapper {
+  .flex();
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.backCall-input {
+  width: 340px;
+  height: 72px;
+  padding: 25px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background-color: @white;
+  .text();
+}
+.backCall-button {
+  width: 200px;
+  height: 80px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background-color: @white;
+  .text();
+}
