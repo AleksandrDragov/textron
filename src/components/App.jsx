@@ -6,6 +6,8 @@ import Partners from './Partners/Partners';
 import BackCall from './BackCall/BackCall';
 import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
+
+const Home = lazy(() => import('../Pages/HomePage/HomePage'));
 const Contacts = lazy(() => import('../Pages/Contacts/Contacts'));
 export const App = () => {
   return (
@@ -14,6 +16,7 @@ export const App = () => {
       <MainContainer>
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
+            <Route path="/home" element={<Home />} />
             <Route path="/contacts" element={<Contacts />} />
           </Routes>
         </Suspense>

@@ -4,7 +4,7 @@
   flex-direction: column;
   .containers();
   .shadow();
-  background-color: #d9d9d9;
+  background-color: #e0dfdf;
   padding-bottom: 20px;
 }
 .backCall-title {
@@ -37,6 +37,9 @@
   border-radius: 30px;
   background-color: @white;
   .text();
+  &:hover {
+    .hover();
+  }
 }
 .backCall-button {
   width: 200px;
@@ -46,4 +49,27 @@
   border-radius: 30px;
   background-color: @white;
   .text();
+  cursor: pointer;
+  &:hover {
+    .hover();
+  }
+  transition: box-shadow 3s linear infinite;
+  animation: buttonAction 3s linear infinite;
+}
+@keyframes buttonAction {
+  0% {
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;
+  }
+  25% {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2.5px 12.5px;
+  }
+  50% {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 25px;
+  }
+  75% {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 9px 35px;
+  }
+  100% {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 15px 45px;
+  }
 }

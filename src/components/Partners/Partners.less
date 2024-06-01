@@ -4,7 +4,13 @@
   height: 130px;
   overflow-x: hidden;
   .containers();
-  .shadow();
+  margin-bottom: -4px;
+  @media screen and (min-width: 768px) {
+    max-width: 1170px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1170px;
+  }
   background-color: #e0dfdf;
 }
 
@@ -24,4 +30,5 @@
   background-color: #e0dfdf;
   .containers();
   .shadow();
+  margin-bottom: -1px;
 }

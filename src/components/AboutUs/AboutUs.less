@@ -1,0 +1,41 @@
+@import '../../variables.less';
+.aboutUs-container {
+  .flex();
+  .containers();
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    max-width: 1172px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1172px;
+  }
+  background-color: transparent;
+}
+.aboutUs-title {
+  .text();
+  font-weight: 700;
+  font-size: 40px;
+}
+.aboutUs-text-wrapper {
+  .flex();
+  max-width: 300px;
+  border: 2px solid @black;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 2em;
+  @media screen and (min-width: 768px) {
+    max-width: 700px;
+  }
+}
+.aboutUs-text {
+  .text();
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+  }
+}

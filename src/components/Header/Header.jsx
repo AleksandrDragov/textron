@@ -1,6 +1,7 @@
 import './Header.less';
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import Icon from 'components/Icon/Icon';
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -14,7 +15,12 @@ function Header() {
   return (
     <header className="header-container">
       <NavLink to="/" className="header-logo">
-        Textron
+        <Icon
+          id="textron-logo"
+          width={50}
+          height={50}
+          className="header-logo-icon"
+        />
       </NavLink>
       <div
         className={`BurgerIcon ${menuOpen ? 'open' : ''}`}
@@ -28,7 +34,7 @@ function Header() {
         className={`header-navigation ${menuOpen ? 'open' : ''}`}
         menuOpen={menuOpen}
       >
-        <NavLink className="nav-item" to="/" onClick={closeMenu}>
+        <NavLink className="nav-item" to="/home" onClick={closeMenu}>
           Home
         </NavLink>
         <NavLink className="nav-item" to="/services" onClick={closeMenu}>
