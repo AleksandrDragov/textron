@@ -14,11 +14,11 @@ function Header() {
 
   return (
     <header className="header-container">
-      <NavLink to="/" className="header-logo">
+      <NavLink to="/home" className="header-logo">
         <Icon
           id="textron-logo"
-          width={50}
-          height={50}
+          width={150}
+          height={150}
           className="header-logo-icon"
         />
       </NavLink>
