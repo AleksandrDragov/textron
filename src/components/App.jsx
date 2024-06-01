@@ -13,31 +13,32 @@ const Contacts = lazy(() => import('../Pages/Contacts/Contacts'));
 export const App = () => {
   return (
     <div className="container">
-      <Suspense
-        fallback={
-          <div className="loading-container">
-            <Icon
-              id="textron-logo"
-              width={150}
-              height={150}
-              className="loading-logo-icon"
-            />
-            Loading...
-          </div>
-        }
-      >
-        {' '}
-        <Header />
-        <MainContainer>
+      {' '}
+      <Header />
+      <MainContainer>
+        <Suspense
+          fallback={
+            <div className="loading-container">
+              <Icon
+                id="textron-logo"
+                width={150}
+                height={150}
+                className="loading-logo-icon"
+              />
+              Loading...
+            </div>
+          }
+        >
+          {' '}
           <Routes>
             <Route path="/home" element={<Home />} />
             <Route path="/contacts" element={<Contacts />} />
           </Routes>
-        </MainContainer>
-        <Partners />
-        <BackCall />
-        <Footer />
-      </Suspense>
+        </Suspense>
+      </MainContainer>
+      <Partners />
+      <BackCall />
+      <Footer />
     </div>
   );
 };
