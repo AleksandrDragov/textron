@@ -8,8 +8,10 @@
     flex-direction: row;
     justify-content: center;
   }
+  position: relative;
 }
 .background-image {
+  .flex();
   background-image: url('../../images/background.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,9 +29,11 @@
   }
 }
 .hero-title {
+  width: 100%;
+  .flex();
   .text();
   font-weight: 700;
   font-size: 70px;
-  position: absolute;
   .grayish ();
+  position: absolute;
 }
