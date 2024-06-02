@@ -16,19 +16,21 @@ export const App = () => {
     <div className="container">
       {' '}
       <Header />
-      <MainContainer>
-        <Suspense fallback={<Loader />}>
-          {' '}
-          <Routes>
-            <Route path="/home" element={<Home />} />
-            <Route path="/contacts" element={<Contacts />} />
-            <Route path="/services" element={<Services />} />
-          </Routes>
-        </Suspense>
-      </MainContainer>
-      <Partners />
-      <BackCall />
-      <Footer />
+      <div className="app-shadow-wrapper">
+        <MainContainer>
+          <Suspense fallback={<Loader />}>
+            {' '}
+            <Routes>
+              <Route path="/home" element={<Home />} />
+              <Route path="/contacts" element={<Contacts />} />
+              <Route path="/services" element={<Services />} />
+            </Routes>
+          </Suspense>
+        </MainContainer>
+        <Partners />
+        <BackCall />
+        <Footer />
+      </div>
     </div>
   );
 };
