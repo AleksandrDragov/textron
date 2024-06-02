@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/building-Indusri/static/css/main.6fcce1a2.css",
-    "main.js": "/building-Indusri/static/js/main.2e0101c9.js",
+    "main.css": "/building-Indusri/static/css/main.477def71.css",
+    "main.js": "/building-Indusri/static/js/main.3c49d4af.js",
     "static/css/610.6e63bf09.chunk.css": "/building-Indusri/static/css/610.6e63bf09.chunk.css",
     "static/js/610.5aeaea80.chunk.js": "/building-Indusri/static/js/610.5aeaea80.chunk.js",
     "static/css/872.3dc227eb.chunk.css": "/building-Indusri/static/css/872.3dc227eb.chunk.css",
     "static/js/872.8831ff27.chunk.js": "/building-Indusri/static/js/872.8831ff27.chunk.js",
-    "static/css/905.6327a53e.chunk.css": "/building-Indusri/static/css/905.6327a53e.chunk.css",
-    "static/js/905.cdda5e2a.chunk.js": "/building-Indusri/static/js/905.cdda5e2a.chunk.js",
+    "static/css/905.9dc3135e.chunk.css": "/building-Indusri/static/css/905.9dc3135e.chunk.css",
+    "static/js/905.cfb92ef6.chunk.js": "/building-Indusri/static/js/905.cfb92ef6.chunk.js",
     "static/media/background.png": "/building-Indusri/static/media/background.6bfc7e1fe3c7d06ee676.png",
     "static/media/services-image-1.png": "/building-Indusri/static/media/services-image-1.46cd6b37a3120b576caf.png",
     "static/media/sprite.svg": "/building-Indusri/static/media/sprite.eef66b5e851a7d5abfaf2ed2b8fbcd8f.svg",
     "index.html": "/building-Indusri/index.html",
-    "main.6fcce1a2.css.map": "/building-Indusri/static/css/main.6fcce1a2.css.map",
-    "main.2e0101c9.js.map": "/building-Indusri/static/js/main.2e0101c9.js.map",
+    "main.477def71.css.map": "/building-Indusri/static/css/main.477def71.css.map",
+    "main.3c49d4af.js.map": "/building-Indusri/static/js/main.3c49d4af.js.map",
     "610.6e63bf09.chunk.css.map": "/building-Indusri/static/css/610.6e63bf09.chunk.css.map",
     "610.5aeaea80.chunk.js.map": "/building-Indusri/static/js/610.5aeaea80.chunk.js.map",
     "872.3dc227eb.chunk.css.map": "/building-Indusri/static/css/872.3dc227eb.chunk.css.map",
     "872.8831ff27.chunk.js.map": "/building-Indusri/static/js/872.8831ff27.chunk.js.map",
-    "905.6327a53e.chunk.css.map": "/building-Indusri/static/css/905.6327a53e.chunk.css.map",
-    "905.cdda5e2a.chunk.js.map": "/building-Indusri/static/js/905.cdda5e2a.chunk.js.map"
+    "905.9dc3135e.chunk.css.map": "/building-Indusri/static/css/905.9dc3135e.chunk.css.map",
+    "905.cfb92ef6.chunk.js.map": "/building-Indusri/static/js/905.cfb92ef6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6fcce1a2.css",
-    "static/js/main.2e0101c9.js"
+    "static/css/main.477def71.css",
+    "static/js/main.3c49d4af.js"
   ]
 }
