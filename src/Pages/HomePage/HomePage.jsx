@@ -7,7 +7,7 @@ function HomePage() {
     <div className="home-container">
       <Hero PageTitle="Home" />
       <AboutUs />
-      {/* <Advantages /> */}
+      <Advantages />
     </div>
   );
 }
