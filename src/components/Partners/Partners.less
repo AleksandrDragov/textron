@@ -1,16 +1,21 @@
 @import '../../variables.less';
 .partners-container {
   .flex();
-  height: 130px;
+  height: 100px;
   overflow-x: hidden;
   .containers();
   margin-bottom: -4px;
-  @media screen and (min-width: 768px) {
-    max-width: 1170px;
-  }
-  @media screen and (min-width: 1440px) {
-    width: 1170px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   max-width: 1172px;
+  // }
+  // @media screen and (min-width: 1440px) {
+  //   width: 1172px;
+  // }
+  position: relative;
+  z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 5px -3px,
+    rgba(0, 0, 0, 0.5) 0px 15px 15px -15px,
+    rgba(0, 0, 0, 0.4) 0px 10px 10px -10px;
   background-color: #e0dfdf;
 }
 
@@ -27,8 +32,7 @@
 }
 .partners-title-wrapper {
   .flex();
-  background-color: #e0dfdf;
+  background-color: #d9d9d9;
   .containers();
-  .shadow();
   margin-bottom: -1px;
 }

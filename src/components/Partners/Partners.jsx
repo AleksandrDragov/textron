@@ -20,13 +20,13 @@ function Partners() {
           slidesPerView={2}
           breakpoints={{
             640: {
-              slidesPerView: 2,
-            },
-            768: {
               slidesPerView: 3,
             },
-            1024: {
+            768: {
               slidesPerView: 4,
+            },
+            1024: {
+              slidesPerView: 5,
             },
           }}
           autoplay={{
