@@ -13,19 +13,19 @@ export const partners = [
     className="partners-contacts-icon"
   />,
   <Icon
-    id="facebook"
+    id="instagram"
     width={100}
     height={100}
     className="partners-contacts-icon"
   />,
   <Icon
-    id="facebook"
+    id="clock"
     width={100}
     height={100}
     className="partners-contacts-icon"
   />,
   <Icon
-    id="facebook"
+    id="mail"
     width={100}
     height={100}
     className="partners-contacts-icon"

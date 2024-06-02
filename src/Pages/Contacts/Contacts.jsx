@@ -5,8 +5,8 @@ import Hero from 'components/Hero/Hero';
 function Contacts() {
   return (
     <>
-      <Hero PageTitle="Contacts" />
       <div className="contacts-container">
+        <Hero PageTitle="Contacts" />
         <div className="contacts-contacts">
           <a className="contacts-contacts-links" href="tel:+380671234567">
             <span>

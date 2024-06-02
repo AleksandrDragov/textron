@@ -1,5 +1,5 @@
 import './App.less';
-import Icon from './Icon/Icon';
+import Loader from './Loader/Loader';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import MainContainer from './MainContainer/MainContainer';
@@ -10,29 +10,19 @@ import { Route, Routes } from 'react-router-dom';
 
 const Home = lazy(() => import('../Pages/HomePage/HomePage'));
 const Contacts = lazy(() => import('../Pages/Contacts/Contacts'));
+const Services = lazy(() => import('../Pages/Services/Services'));
 export const App = () => {
   return (
     <div className="container">
       {' '}
       <Header />
       <MainContainer>
-        <Suspense
-          fallback={
-            <div className="loading-container">
-              <Icon
-                id="textron-logo"
-                width={150}
-                height={150}
-                className="loading-logo-icon"
-              />
-              Loading...
-            </div>
-          }
-        >
+        <Suspense fallback={<Loader />}>
           {' '}
           <Routes>
             <Route path="/home" element={<Home />} />
             <Route path="/contacts" element={<Contacts />} />
+            <Route path="/services" element={<Services />} />
           </Routes>
         </Suspense>
       </MainContainer>
