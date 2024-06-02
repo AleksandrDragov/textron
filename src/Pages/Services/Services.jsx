@@ -7,45 +7,47 @@ function Services() {
     <>
       <div className="services-container">
         <Hero PageTitle="Services" />
-        <div className="services-card-wrapper">
-          <img
-            className="service-card-img"
-            src={serviceImage}
-            alt="Reconstruction "
-          />
-          <p className="service-card-text">
-            Reconstruction of apartment buildings
-          </p>
-        </div>
-        <div className="services-card-wrapper">
-          <img
-            className="service-card-img"
-            src={serviceImage}
-            alt="Reconstruction "
-          />
-          <p className="service-card-text">
-            Reconstruction of apartment buildings
-          </p>
-        </div>
-        <div className="services-card-wrapper">
-          <img
-            className="service-card-img"
-            src={serviceImage}
-            alt="Reconstruction "
-          />
-          <p className="service-card-text">
-            Reconstruction of apartment buildings
-          </p>
-        </div>
-        <div className="services-card-wrapper">
-          <img
-            className="service-card-img"
-            src={serviceImage}
-            alt="Reconstruction "
-          />
-          <p className="service-card-text">
-            Reconstruction of apartment buildings
-          </p>
+        <div className="service-card-container">
+          <div className="services-card-wrapper">
+            <img
+              className="service-card-img"
+              src={serviceImage}
+              alt="Reconstruction "
+            />
+            <p className="service-card-text">
+              Reconstruction of apartment buildings
+            </p>
+          </div>
+          <div className="services-card-wrapper">
+            <img
+              className="service-card-img"
+              src={serviceImage}
+              alt="Reconstruction "
+            />
+            <p className="service-card-text">
+              Reconstruction of apartment buildings
+            </p>
+          </div>
+          <div className="services-card-wrapper">
+            <img
+              className="service-card-img"
+              src={serviceImage}
+              alt="Reconstruction "
+            />
+            <p className="service-card-text">
+              Reconstruction of apartment buildings
+            </p>
+          </div>
+          <div className="services-card-wrapper">
+            <img
+              className="service-card-img"
+              src={serviceImage}
+              alt="Reconstruction "
+            />
+            <p className="service-card-text">
+              Reconstruction of apartment buildings
+            </p>
+          </div>
         </div>
       </div>
     </>
