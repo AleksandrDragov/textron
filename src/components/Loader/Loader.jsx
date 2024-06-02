@@ -10,7 +10,7 @@ export default function Loader() {
         height={150}
         className="loading-logo-icon"
       />
-      <p>Loading...</p>
+      <p className="loader-text"> Loading...</p>
     </div>
   );
 }
