@@ -17,7 +17,7 @@ function Partners() {
         <Swiper
           className="partners-contacts-swiper"
           spaceBetween={10}
-          slidesPerView={2}
+          slidesPerView={3}
           breakpoints={{
             640: {
               slidesPerView: 3,
