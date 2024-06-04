@@ -2,6 +2,8 @@ import React from 'react';
 import './Projects.less';
 import { projectData } from './projectsData.js';
 import Hero from 'components/Hero/Hero';
+import { Link } from 'react-router-dom';
+
 function Projects() {
   return (
     <div className="projects-container">
@@ -10,7 +12,11 @@ function Projects() {
         {projectData.map(
           project =>
             project.mainPhoto && (
-              <div key={project.id} className="project-card">
+              <Link
+                key={project.id}
+                to={`/project/${project.id}`}
+                className="project-card"
+              >
                 <img
                   src={`${project.mainPhoto}`}
                   alt={project.name}
@@ -18,9 +24,9 @@ function Projects() {
                 />
                 <div className="project-card-overlay">
                   <p className="project-text-overlay">{project.preTitle}</p>
-                  <p className="projects-hint-text">Click to get in</p>
+                  <p className="projects-hint-text">Click to get information</p>
                 </div>
-              </div>
+              </Link>
             )
         )}
       </div>
