@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <header className="header-container">
-      <NavLink to="/home" className="header-logo">
+      <NavLink to="/" className="header-logo">
         <Icon
           id="textron-logo"
           width={150}
@@ -34,7 +34,7 @@ function Header() {
         className={`header-navigation ${menuOpen ? 'open' : ''}`}
         menuOpen={menuOpen}
       >
-        <NavLink className="nav-item" to="/home" onClick={closeMenu}>
+        <NavLink className="nav-item" to="/" onClick={closeMenu}>
           Home
         </NavLink>
         <NavLink className="nav-item" to="/services" onClick={closeMenu}>

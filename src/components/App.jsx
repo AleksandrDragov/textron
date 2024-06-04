@@ -25,7 +25,7 @@ export const App = () => {
           <Suspense fallback={<Loader />}>
             {' '}
             <Routes>
-              <Route path="/home" element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/services" element={<Services />} />
               <Route path="/projects" element={<Projects />} />
