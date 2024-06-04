@@ -1,4 +1,3 @@
-import { nanoid } from 'nanoid';
 import img from '../../images/services-image-1.png';
 export const projectData = [
   {
