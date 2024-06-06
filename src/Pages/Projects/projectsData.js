@@ -9,10 +9,9 @@ export const projectData = [
     days: 75,
     id: 'gotel987-0',
     gallery: [
-      '../../images/services-image-1.png',
-      '../../images/services-image-1.png',
-      '../../images/services-image-1.png',
-      '../../images/services-image-1.png',
+      img,
+      img,
+      img,
     ],
   },
   {
@@ -24,10 +23,10 @@ export const projectData = [
     days: 75,
     id: 'gotel987-1',
     gallery: [
-      '../../images/services-image-1.png',
-      '../../images/services-image-1.png',
-      '../../images/services-image-1.png',
-      '../../images/services-image-1.png',
+      img,
+      img,
+      img,
+      img,
     ],
   },
   {
@@ -39,10 +38,10 @@ export const projectData = [
     days: 75,
     id: 'gotel987-3',
     gallery: [
-      '../../images/services-image-1.png',
-      '../../images/services-image-1.png',
-      '../../images/services-image-1.png',
-      '../../images/services-image-1.png',
+      img,
+      img,
+      img,
+      img,
     ],
   },
   {
@@ -54,10 +53,10 @@ export const projectData = [
     days: 75,
     id: 'gotel987-4',
     gallery: [
-      '../../images/services-image-1.png',
-      '../../images/services-image-1.png',
-      '../../images/services-image-1.png',
-      '../../images/services-image-1.png',
+      img,
+      img,
+      img,
+      img,
     ],
   },
 ];

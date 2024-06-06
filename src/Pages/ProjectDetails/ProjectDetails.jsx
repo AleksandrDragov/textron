@@ -1,4 +1,10 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Zoom, Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/zoom';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import { useParams } from 'react-router-dom';
 import { projectData } from 'Pages/Projects/projectsData';
 import Hero from 'components/Hero/Hero';
@@ -11,7 +17,7 @@ function ProjectDetails() {
   if (!project) {
     return <p>Project not found</p>;
   }
-
+  
   return (
     <div className="project-details-container">
       <Hero PageTitle={project.name} />
@@ -46,13 +52,27 @@ function ProjectDetails() {
           </div>
         </div>
         <div className="project-details-gallery">
+          <h1 className="projectDetails-gallery-title">Gallery</h1>
+        <Swiper
+        zoom={true}
+        navigation={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Zoom, Navigation, Pagination]}
+        className="projectDetails-swiper"
+       >
           {project.gallery.map((photo, index) => (
+            <SwiperSlide key={index}>
             <img
+              className='project-details-gallery-item'
               key={index}
               src={photo}
               alt={`${project.name} - ${index + 1}`}
             />
+          </SwiperSlide>
           ))}
+          </Swiper>
         </div>
       </div>
     </div>
