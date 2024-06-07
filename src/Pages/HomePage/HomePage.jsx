@@ -4,11 +4,11 @@ import Hero from 'components/Hero/Hero';
 import Advantages from 'components/Advantages/Advantages';
 function HomePage() {
   return (
-    <div className="home-container">
+    <main className="home-container">
       <Hero PageTitle="Home" />
       <AboutUs />
       <Advantages />
-    </div>
+    </main>
   );
 }
 

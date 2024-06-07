@@ -13,13 +13,12 @@ import Icon from 'components/Icon/Icon';
 function ProjectDetails() {
   const { id } = useParams();
   const project = projectData.find(project => project.id === id);
-  console.log(project);
   if (!project) {
     return <p>Project not found</p>;
   }
   
   return (
-    <div className="project-details-container">
+    <main className="project-details-container">
       <Hero PageTitle={project.name} />
 
       <div className="project-details-info">
@@ -55,9 +54,11 @@ function ProjectDetails() {
           <h1 className="projectDetails-gallery-title">Gallery</h1>
         <Swiper
         zoom={true}
+        
         navigation={true}
         pagination={{
           clickable: true,
+          
         }}
         modules={[Zoom, Navigation, Pagination]}
         className="projectDetails-swiper"
@@ -69,13 +70,14 @@ function ProjectDetails() {
               key={index}
               src={photo}
               alt={`${project.name} - ${index + 1}`}
+              loading="lazy"
             />
           </SwiperSlide>
           ))}
           </Swiper>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 

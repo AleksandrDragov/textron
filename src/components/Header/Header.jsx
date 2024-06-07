@@ -2,12 +2,14 @@ import './Header.less';
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Icon from 'components/Icon/Icon';
+
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+  
   const closeMenu = () => {
     setMenuOpen(false);
   };
@@ -32,7 +34,7 @@ function Header() {
       </div>
       <nav
         className={`header-navigation ${menuOpen ? 'open' : ''}`}
-        menuOpen={menuOpen}
+        data-menu-open={menuOpen}  // Updated this line
       >
         <NavLink className="nav-item" to="/" onClick={closeMenu}>
           Home
@@ -52,3 +54,4 @@ function Header() {
 }
 
 export default Header;
+

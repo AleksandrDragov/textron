@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function Projects() {
   return (
-    <div className="projects-container">
+    <main className="projects-container">
       <Hero PageTitle="Projects" />
       <div className="projects-wrapper">
         {projectData.map(
@@ -21,6 +21,7 @@ function Projects() {
                   src={`${project.mainPhoto}`}
                   alt={project.name}
                   className="project-card-image"
+                  
                 />
                 <div className="project-card-overlay">
                   <p className="project-text-overlay">{project.preTitle}</p>
@@ -30,7 +31,7 @@ function Projects() {
             )
         )}
       </div>
-    </div>
+    </main>
   );
 }
 
