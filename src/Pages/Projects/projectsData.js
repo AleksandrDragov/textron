@@ -56,7 +56,7 @@ export const projectData = [
       img,
       img,
       img,
-      "https://shorturl.at/n8MHr",
+      "https://shorturl.at/MgfuC",
     ],
   },
 ];
