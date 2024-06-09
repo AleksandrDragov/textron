@@ -1,7 +1,7 @@
 import React from 'react'
 import './Reviews.less';
 import Hero from 'components/Hero/Hero';
-import Icon from 'components/Icon/Icon';
+import Icon from 'utils/Icon';
 import { Link } from 'react-router-dom';
 function Reviews() {
   return (

@@ -1,7 +1,7 @@
 import './Header.less';
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import Icon from 'components/Icon/Icon';
+import Icon from 'utils/Icon';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);

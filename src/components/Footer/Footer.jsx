@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.less';
-import Icon from 'components/Icon/Icon';
+import Icon from 'utils/Icon';
 function Footer() {
   return (
     <>

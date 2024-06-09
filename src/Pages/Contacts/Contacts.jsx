@@ -1,8 +1,8 @@
 import './Contacts.less';
 import React, { useState } from 'react';
-import Icon from 'components/Icon/Icon';
+import Icon from 'utils/Icon';
 import Hero from 'components/Hero/Hero';
-import Loader from 'components/Loader/Loader';
+import Loader from 'utils/Loader/Loader';
 function Contacts() {
   const [isMapLoaded, setIsMapLoaded] = useState(false);
 

@@ -1,4 +1,4 @@
-import Icon from 'components/Icon/Icon';
+import Icon from 'utils/Icon';
 export const partners = [
   <Icon
     id="facebook"

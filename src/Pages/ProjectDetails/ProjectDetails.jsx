@@ -6,10 +6,10 @@ import 'swiper/css/zoom';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { useParams } from 'react-router-dom';
-import { projectData } from 'Pages/Projects/projectsData';
+import { projectData } from 'data/projectsData';
 import Hero from 'components/Hero/Hero';
 import './ProjectDetails.less';
-import Icon from 'components/Icon/Icon';
+import Icon from 'utils/Icon';
 function ProjectDetails() {
   const { id } = useParams();
   const project = projectData.find(project => project.id === id);
@@ -54,7 +54,7 @@ function ProjectDetails() {
           <h1 className="projectDetails-gallery-title">Gallery</h1>
         <Swiper
         zoom={true}
-        
+        autoHeight={true}
         navigation={true}
         pagination={{
           clickable: true,
@@ -64,7 +64,7 @@ function ProjectDetails() {
         className="projectDetails-swiper"
        >
           {project.gallery.map((photo, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} >
             <img
               className='project-details-gallery-item'
               key={index}

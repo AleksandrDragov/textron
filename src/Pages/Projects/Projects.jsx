@@ -1,6 +1,6 @@
 import React from 'react';
 import './Projects.less';
-import { projectData } from './projectsData.js';
+import { projectData } from '../../data/projectsData.js';
 import Hero from 'components/Hero/Hero';
 import { Link } from 'react-router-dom';
 

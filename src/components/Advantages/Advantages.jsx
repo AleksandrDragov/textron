@@ -1,6 +1,6 @@
 import React from 'react';
 import './Advantages.less';
-import Icon from 'components/Icon/Icon';
+import Icon from 'utils/Icon';
 function Advantages() {
   return (
     <div className="advantages-container">

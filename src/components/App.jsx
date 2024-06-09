@@ -1,5 +1,5 @@
 import './App.less';
-import Loader from './Loader/Loader';
+import Loader from '../utils/Loader/Loader';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import MainContainer from './MainContainer/MainContainer';
