@@ -1,4 +1,4 @@
-import img from '../images/services-image-1.png';
+
 import images from 'utils/imagehandler';
 export const projectData = [
   {
