@@ -7,7 +7,7 @@ import Partners from './Partners/Partners';
 import BackCall from './BackCall/BackCall';
 import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
-
+//import Scrollup from 'utils/ScrollUp/scrollup';
 const Home = lazy(() => import('../Pages/HomePage/HomePage'));
 const Contacts = lazy(() => import('../Pages/Contacts/Contacts'));
 const Services = lazy(() => import('../Pages/Services/Services'));
@@ -34,6 +34,7 @@ export const App = () => {
               <Route path="/project/:id" element={<ProjectsDetails />} />
             </Routes>
           </Suspense>
+          {/* <Scrollup /> */}
         </MainContainer>
         <Partners />
         <BackCall />
