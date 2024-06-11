@@ -2,15 +2,15 @@ const Recipient = require("mailersend").Recipient;
 const EmailParams = require("mailersend").EmailParams;
 const MailerSend = require("mailersend");
 import 'dotenv/config'
-const {MAILER_KEY} = process.env;
+const {MAILER_KEY,SENDFROM,SENDTO} = process.env;
 const mailersend = new MailerSend({
     api_key: MAILER_KEY,
 });
 
-const recipients = [new Recipient(process.env(), "Recipient")];
+const recipients = [new Recipient(SENDTO,"Recipient")];
 
 const emailParams = new EmailParams()
-    .setFrom("info@domain.com")
+    .setFrom(SENDFROM)
     .setFromName("Your Name")
     .setRecipients(recipients)
     .setSubject("Subject")
