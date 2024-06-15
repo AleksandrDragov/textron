@@ -1,5 +1,5 @@
 
-import images from 'utils/imagehandler';
+import images from "utils/imagehandler";
 export const projectData = [
   {
     name: 'hotel 987 - 1',
