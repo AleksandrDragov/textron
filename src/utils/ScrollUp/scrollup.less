@@ -1,24 +1,23 @@
 @import '../../variables.less';
-.app-shadow-wrapper>.scrollUp-container {
+.scrollUp-container {
     .flex();
     justify-content: right;
     .containers();
-    position: fixed;
-     bottom: 0;
-    z-index: 10000000000;
-    padding-bottom: 20px;
-    padding-right: 20px;
     &.visible {
       .scrollUp-btn {
         opacity: 1;
         visibility: visible;
-       
+        
       }
     }
   }
   
   .scrollUp-btn {
-    .flex();
+    .flex(); 
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    margin: 20px;
     font-size: 24px;
     border: 1.5px solid @black;
     width: 50px; 
@@ -27,7 +26,6 @@
     border-radius: 50%;
     cursor: pointer;
     opacity: 0;
-    z-index: 99999999;
     visibility: hidden;
     transition: opacity 0.3s, visibility 0.3s;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
