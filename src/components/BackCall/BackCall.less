@@ -25,8 +25,12 @@
 }
 .backCall-inputWrapper {
   .flex();
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 40px;
+}
+.backCall-label{
+  text-align: center;
 }
 .backCall-input {
   width: 315px;
@@ -41,6 +45,15 @@
   &:hover {
     .hover();
   }
+}
+.backCall-errors{
+  max-width: 315px;
+  text-wrap: wrap;
+  padding-top: 10px;
+  .text();
+  font-size: 18px;
+  color: rgb(245, 46, 46);
+ 
 }
 .backCall-button {
   width: 200px;
