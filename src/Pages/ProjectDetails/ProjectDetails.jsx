@@ -16,11 +16,10 @@ function ProjectDetails() {
   if (!project) {
     return <p>Project not found</p>;
   }
-  
   return (
+
     <main className="project-details-container">
       <Hero PageTitle={project.name} />
-
       <div className="project-details-info">
         <div className="projectDetails-info-wrapper">
           <div className="project-description-wrapper">
