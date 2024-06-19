@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/building-Indusri/static/css/main.3982ee63.css",
-    "main.js": "/building-Indusri/static/js/main.6effccd4.js",
+    "main.js": "/building-Indusri/static/js/main.b1908355.js",
     "static/css/610.f78b341e.chunk.css": "/building-Indusri/static/css/610.f78b341e.chunk.css",
     "static/js/610.3279d02d.chunk.js": "/building-Indusri/static/js/610.3279d02d.chunk.js",
     "static/css/872.3a53d6a0.chunk.css": "/building-Indusri/static/css/872.3a53d6a0.chunk.css",
@@ -17,7 +17,7 @@
     "static/media/sprite.svg": "/building-Indusri/static/media/sprite.c8d1e3d22b6daf66e514296f33f2787b.svg",
     "index.html": "/building-Indusri/index.html",
     "main.3982ee63.css.map": "/building-Indusri/static/css/main.3982ee63.css.map",
-    "main.6effccd4.js.map": "/building-Indusri/static/js/main.6effccd4.js.map",
+    "main.b1908355.js.map": "/building-Indusri/static/js/main.b1908355.js.map",
     "610.f78b341e.chunk.css.map": "/building-Indusri/static/css/610.f78b341e.chunk.css.map",
     "610.3279d02d.chunk.js.map": "/building-Indusri/static/js/610.3279d02d.chunk.js.map",
     "872.3a53d6a0.chunk.css.map": "/building-Indusri/static/css/872.3a53d6a0.chunk.css.map",
@@ -31,6 +31,6 @@
   },
   "entrypoints": [
     "static/css/main.3982ee63.css",
-    "static/js/main.6effccd4.js"
+    "static/js/main.b1908355.js"
   ]
 }
