@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './scrollup.less';
-import Icon from 'utils/Icon';
 
 function ScrollUp() {
   const [isVisible, setIsVisible] = useState(false);
