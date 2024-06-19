@@ -30,7 +30,7 @@ function ScrollUp() {
   return (
     <div className={`scrollUp-container ${isVisible ? 'visible' : ''}`}>
       {isVisible && (
-        <button className="scrollUp-btn" onClick={handleUp}><Icon id='arrow-up' width={30} height={30}/></button>
+        <button className="mail" onClick={handleUp}><Icon id='arrow-up' width={30} height={30}/></button>
       )}
     </div>
   );
