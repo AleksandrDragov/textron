@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './scrollup.less';
+import Icon from 'utils/Icon';
 
 function ScrollUp() {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,7 +30,7 @@ function ScrollUp() {
   return (
     <div className={`scrollUp-container ${isVisible ? 'visible' : ''}`}>
       {isVisible && (
-        <button className="scrollUp-btn" onClick={handleUp}>^</button>
+        <button className="scrollUp-btn" onClick={handleUp}><Icon id='arrow-up' width={30} height={30}/></button>
       )}
     </div>
   );
