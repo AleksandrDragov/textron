@@ -1,6 +1,6 @@
 import './Header.less';
 import React, { useState } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import Icon from 'utils/Icon';
 import LangSelect from 'utils/LanguagesSwiper/LangSelect';
 function Header() {
