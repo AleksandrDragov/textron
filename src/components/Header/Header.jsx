@@ -1,8 +1,8 @@
 import './Header.less';
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import Icon from 'utils/Icon';
-
+import LangSelect from 'utils/LanguagesSwiper/LangSelect';
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -34,7 +34,7 @@ function Header() {
       </div>
       <nav
         className={`header-navigation ${menuOpen ? 'open' : ''}`}
-        data-menu-open={menuOpen}  // Updated this line
+        data-menu-open={menuOpen}  
       >
         <NavLink className="nav-item" to="/" onClick={closeMenu}>
           Home
@@ -47,7 +47,9 @@ function Header() {
         </NavLink>
         <NavLink className="nav-item" to="/contacts" onClick={closeMenu}>
           Contacts
-        </NavLink>
+        </NavLink> 
+          
+        <LangSelect/>
       </nav>
     </header>
   );

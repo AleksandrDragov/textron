@@ -1,0 +1,46 @@
+@import '../../variables.less';
+.languages {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .languages-btn {
+    .flex();
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background: white;
+    border: none;
+  }
+  
+  .languages-btn .icon {
+    margin-right: 10px;
+  }
+  
+  .languages-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    .flex();
+    flex-direction: column;
+    border: 1px solid #ccc;
+    background: white;
+  }
+  
+  .languages-option {
+   .flex();
+    cursor: pointer;
+    background: white;
+    border: none;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .languages-option:hover {
+    background: #f0f0f0;
+  }
+  
+  .languages-option .icon {
+    margin-right: 10px;
+  }
+  
