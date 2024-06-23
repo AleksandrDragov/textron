@@ -3,7 +3,6 @@ import './Projects.less';
 import { projectData } from '../../data/projectsData.js';
 import Hero from 'components/Hero/Hero';
 import { Link } from 'react-router-dom';
-import { useTransition } from 'react';
 import { useTranslation } from 'react-i18next';
 
 function Projects() {
