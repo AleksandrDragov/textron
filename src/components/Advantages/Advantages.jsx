@@ -1,10 +1,12 @@
 import React from 'react';
 import './Advantages.less';
 import Icon from 'utils/Icon';
+import { useTranslation } from 'react-i18next';
 function Advantages() {
+  const {t} = useTranslation();
   return (
     <div className="advantages-container">
-      <h1 className="advantages-title">Why chose us?</h1>
+      <h1 className="advantages-title">{t('why_chose_us.title')}</h1>
       <div className="advantage-element-wrapper">
         <div className="advantages-text-wrapper">
           <Icon
@@ -14,11 +16,10 @@ function Advantages() {
             className="advantages-icon"
           />
           <p className="advantages-main-text">
-            Reconstruction of an apartment in a panel house in 30 days
+            {t('why_chose_us.text_1')}
           </p>
           <p className="advantages-secondary-text">
-            We will complete the apartment in a panel house with an area of up
-            to 80 m2 and prepare it for occupancy in 30 working days
+          {t('why_chose_us.sub_text_1')}
           </p>
         </div>
         <div className="advantages-text-wrapper">
@@ -29,11 +30,10 @@ function Advantages() {
             className="advantages-icon"
           />{' '}
           <p className="advantages-main-text">
-            Contract with a guarantee of up to 24 months and liability insurance
+          {t('why_chose_us.text_2')}
           </p>
           <p className="advantages-secondary-text">
-            Before the reconstruction, we will conclude a contract in which the
-            conditions, prices and deadlines are clearly set. Then we start
+          {t('why_chose_us.sub_text_2')}
           </p>
         </div>
         <div className="advantages-text-wrapper">
@@ -44,12 +44,10 @@ function Advantages() {
             className="advantages-icon"
           />
           <p className="advantages-main-text">
-            Work carried out under constant control
+          {t('why_chose_us.text_3')}
           </p>
           <p className="advantages-secondary-text">
-            The quality of the work is ensured by an authorized construction
-            supervisor, who also takes a photo and documents everything. You can
-            watch everything from a distance
+          {t('why_chose_us.sub_text_3')}
           </p>
         </div>
       </div>

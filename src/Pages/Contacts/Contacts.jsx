@@ -3,16 +3,17 @@ import React, { useState } from 'react';
 import Icon from 'utils/Icon';
 import Hero from 'components/Hero/Hero';
 import Loader from 'utils/Loader/Loader';
+import { useTranslation } from 'react-i18next';
 function Contacts() {
   const [isMapLoaded, setIsMapLoaded] = useState(false);
-
+ const {t}= useTranslation()
   const handleMapLoad = () => {
     setIsMapLoaded(true);
   };
   return (
     <>
       <main className="contacts-container">
-        <Hero PageTitle="Contacts" />
+        <Hero PageTitle={t('header.contacts')} />
         <div className="contacts-contacts">
           <a className="contacts-contacts-links" href="tel:+380671234567">
             <span>

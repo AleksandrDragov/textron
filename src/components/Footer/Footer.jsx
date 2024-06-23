@@ -1,14 +1,16 @@
 import React from 'react';
 import './Footer.less';
 import Icon from 'utils/Icon';
+import { useTranslation } from 'react-i18next';
 function Footer() {
+ const {t}= useTranslation()
   return (
     <>
       <footer className="footer-container">
         <div className="footer-work">
-          <h2 className="footer-work-title">Working hours</h2>
+          <h2 className="footer-work-title">{t('footer.wh_title')}</h2>
           <p className="footer-work-text">
-            Monday to Friday: 8-18 Saturday: 8-14
+          {t('footer.wh_text')}
           </p>
         </div>
         <div className="footer-contacts">

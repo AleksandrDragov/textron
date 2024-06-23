@@ -5,13 +5,15 @@ import { Autoplay } from 'swiper/modules';
 import SwiperCore from 'swiper';
 import { partners } from '../../data/partnersData';
 import './Partners.less';
+import { useTranslation } from 'react-i18next';
 SwiperCore.use([Autoplay]);
 
 function Partners() {
+  const {t}=useTranslation()
   return (
     <>
       <div className="partners-title-wrapper">
-        <h1 className="partners-title">Our partners</h1>
+        <h1 className="partners-title">{t('partners.title')}</h1>
       </div>
       <div className="partners-container">
         <Swiper

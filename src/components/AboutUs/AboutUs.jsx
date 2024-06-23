@@ -1,16 +1,14 @@
 import React from 'react';
 import './AboutUs.less';
+import { useTranslation } from 'react-i18next';
 function AboutUs() {
+  const{t} = useTranslation();
   return (
     <div className="aboutUs-container">
-      <h1 className="aboutUs-title">Who we are?</h1>
+      <h1 className="aboutUs-title">{t('who_we_are.title')}</h1>
       <div className="aboutUs-text-wrapper">
         <p className="aboutUs-text">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting
+       {t('who_we_are.text')}
         </p>
       </div>
     </div>

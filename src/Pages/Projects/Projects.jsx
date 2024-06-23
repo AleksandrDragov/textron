@@ -3,11 +3,14 @@ import './Projects.less';
 import { projectData } from '../../data/projectsData.js';
 import Hero from 'components/Hero/Hero';
 import { Link } from 'react-router-dom';
+import { useTransition } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Projects() {
+ const {t}= useTranslation()
   return (
     <main className="projects-container">
-      <Hero PageTitle="Projects" />
+      <Hero PageTitle={t('header.projects')}/>
       <div className="projects-wrapper">
         {projectData.map(
           project =>
@@ -25,7 +28,7 @@ function Projects() {
                 />
                 <div className="project-card-overlay">
                   <p className="project-text-overlay">{project.preTitle}</p>
-                  <p className="projects-hint-text">Click to get information</p>
+                  <p className="projects-hint-text">{t('project.click_text')}</p>
                 </div>
               </Link>
             )

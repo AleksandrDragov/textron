@@ -2,9 +2,12 @@ import './Header.less';
 import React, { useState } from 'react';
 import { NavLink} from 'react-router-dom';
 import Icon from 'utils/Icon';
-import LangSelect from 'utils/LanguagesSwiper/LangSelect';
+import LangSelect from 'languages/LanguageSelect/LangSelect';
+import { useTranslation } from 'react-i18next';
+import 'languages/i18n';
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const{t} = useTranslation();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -37,16 +40,16 @@ function Header() {
         data-menu-open={menuOpen}  
       >
         <NavLink className="nav-item" to="/" onClick={closeMenu}>
-          Home
+          {t("header.home")}
         </NavLink>
         <NavLink className="nav-item" to="/services" onClick={closeMenu}>
-          Services
+        {t("header.services")}
         </NavLink>
         <NavLink className="nav-item" to="/projects" onClick={closeMenu}>
-          Projects
+        {t("header.projects")}
         </NavLink>
         <NavLink className="nav-item" to="/contacts" onClick={closeMenu}>
-          Contacts
+        {t("header.contacts")}
         </NavLink> 
           
         <LangSelect/>
