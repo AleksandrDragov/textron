@@ -26,7 +26,7 @@ function Projects() {
                   
                 />
                 <div className="project-card-overlay">
-                  <p className="project-text-overlay">{project.preTitle}</p>
+                  <p className="project-text-overlay">{t(project.preTitleKey)}</p>
                   <p className="projects-hint-text">{t('project.click_text')}</p>
                 </div>
               </Link>

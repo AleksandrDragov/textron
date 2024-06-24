@@ -27,9 +27,14 @@ export const cz = {
        },
     project:{ 
      click_text:"kliknutím získáte informace",
+    responsibilities: "Úkol",
+    area: "Rozloha",
+    days: "dní, doba realizace",
+    gallery: "Galerie"
     },
    partners:{
     title:"Naši partneři",
+   
    },
    back_call:{
     title:"Zavoláme vám do 24 hodin",
@@ -42,17 +47,23 @@ export const cz = {
      wh_text:"	Pondělí až Pátek: 8-18 Sobota: 8-14"
     },
     project_details_1:{
-        name:'hotel 987 - 1',
-        preTitle:'reconstruction Hotel 987',
+        name:'hotel 987 - 1 cz',
+        preTitle:'Rekonstrukce Hotel 987 cz',
         description:"Lorem Ipsum 'klnwelgnkwn 'gnw  ngl'nG NG' n kw is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five  centuries ",      
     },
     project_details_2:{
-        name:'hotel 987 - 2',
-        preTitle:'reconstruction Hotel 987',
+        name:'hotel 987 - 2 cz',
+        preTitle:'Rekonstrukce Hotel 987',
         description:"Lorem Ipsum 'klnwelgnkwn 'gnw  ngl'nG NG' n kw is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five  centuries ",      
-    }, project_details_3:{
-        name:'hotel 987 - 3',
-        preTitle:'reconstruction Hotel 987',
+    }, 
+    project_details_3:{
+        name:'hotel 987 - 3 cz',
+        preTitle:'Rekonstrukce Hotel 987',
+        description:"Lorem Ipsum 'klnwelgnkwn 'gnw  ngl'nG NG' n kw is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five  centuries ",      
+    },
+    project_details_4:{
+        name:'hotel 987 - 4 cz',
+        preTitle:'Rekonstrukce Hotel 987',
         description:"Lorem Ipsum 'klnwelgnkwn 'gnw  ngl'nG NG' n kw is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five  centuries ",      
     },
     errors:{
@@ -60,5 +71,6 @@ export const cz = {
         name:"Zadejte jméno",
         phone:"Zadejte telefonní číslo",
         phoneInvalid:"Telefonní  číslo  není platný příklad (777 777 777)",
+        projectNotFound:'Project not found'
     },
 }

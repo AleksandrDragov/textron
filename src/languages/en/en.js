@@ -27,6 +27,10 @@ export const en = {
        },
     project:{ 
      click_text:"click to get information",
+     responsibilities: "Responsibilities",
+    area: "area",
+    days: "days, implementation time",
+    gallery: "Gallery"
     },
    partners:{
     title:"Our partners",

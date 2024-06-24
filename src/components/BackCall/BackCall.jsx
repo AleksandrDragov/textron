@@ -2,7 +2,6 @@ import React from 'react';
 import './BackCall.less';
 import { useForm } from "react-hook-form";
 import { useTranslation } from 'react-i18next';
-
 function BackCall() {
   const {t}= useTranslation()
   const { register, 
@@ -57,7 +56,7 @@ function BackCall() {
             {errors?.phone && <p className='backCall-errors'>{errors?.phone?.message || 'error!'}</p>}
           </label>
         </div>
-        <button className="backCall-button" type="submit" disabled={!isValid}>
+        <button  className="backCall-button" type="submit" disabled={!isValid}>
           {t('back_call.button')}
         </button>
       </form>
