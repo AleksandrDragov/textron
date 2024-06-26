@@ -13,7 +13,8 @@ function BackCall() {
     mode: 'onBlur'
   });
 
-  const onSubmit = (data) => {
+  const onSubmit = () => {
+   
     sendEmail(form.current);
     reset();
   };
