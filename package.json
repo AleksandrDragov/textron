@@ -54,5 +54,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "react-dotenv": {
+    "whitelist": ["REACT_APP_YOUR_SERVICE_ID", "REACT_APP_YOUR_TEMPLATE_ID ", "REACT_APP_YOUR_PUBLIC_KEY" ]
   }
 }
