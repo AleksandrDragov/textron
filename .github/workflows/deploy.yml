@@ -11,9 +11,22 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
 
-      - name: Install, lint, build 🔧
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies 🔧
+        run: npm install
+
+      - name: Create .env file
         run: |
-          npm install
+          echo "REACT_APP_YOUR_SERVICE_ID=${{ secrets.REACT_APP_YOUR_SERVICE_ID }}" >> .env
+          echo "REACT_APP_YOUR_TEMPLATE_ID=${{ secrets.REACT_APP_YOUR_TEMPLATE_ID }}" >> .env
+          echo "REACT_APP_YOUR_PUBLIC_KEY=${{ secrets.REACT_APP_YOUR_PUBLIC_KEY }}" >> .env
+
+      - name: Lint and build 🔧
+        run: |
           npm run lint:js
           npm run build
 
