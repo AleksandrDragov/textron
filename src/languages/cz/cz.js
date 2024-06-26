@@ -41,6 +41,8 @@ export const cz = {
     ph_name:"Napište své jméno",
     ph_phone: "napište své telefonní číslo",
     button:"Objednat",
+    formSubmitted:'SEND',
+    formError:'error',
    },
    footer:{
      wh_title:"Pracovní doba",
@@ -71,6 +73,6 @@ export const cz = {
         name:"Zadejte jméno",
         phone:"Zadejte telefonní číslo",
         phoneInvalid:"Telefonní  číslo  není platný příklad (777 777 777)",
-        projectNotFound:'Project not found'
+        projectNotFound:'projekt nenalezen'
     },
 }

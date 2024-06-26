@@ -1,19 +1,20 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './BackCall.less';
 import { useForm } from "react-hook-form";
 import { useTranslation } from 'react-i18next';
+import sendEmail from '../../services/mailer';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function BackCall() {
-  const {t}= useTranslation()
-  const { register, 
-    formState: { errors, isValid }, 
-    handleSubmit, 
-    reset 
-  } = useForm({
+  const form = useRef();
+  const { t } = useTranslation();
+  const { register, formState: { errors, isValid }, handleSubmit, reset } = useForm({
     mode: 'onBlur'
   });
 
   const onSubmit = (data) => {
-    alert(JSON.stringify(data));
+    sendEmail(form.current);
     reset();
   };
 
@@ -27,7 +28,7 @@ function BackCall() {
   return (
     <div className="backCall-container">
       <h1 className="backCall-title">{t('back_call.title')}</h1>
-      <form className="backCall-form" onSubmit={handleSubmit(onSubmit)}>
+      <form ref={form} className="backCall-form" onSubmit={handleSubmit(onSubmit)}>
         <div className="backCall-inputWrapper">
           <label className='backCall-label'>
             <input
@@ -56,13 +57,13 @@ function BackCall() {
             {errors?.phone && <p className='backCall-errors'>{errors?.phone?.message || 'error!'}</p>}
           </label>
         </div>
-        <button  className="backCall-button" type="submit" disabled={!isValid}>
+        <button className="backCall-button" type="submit" disabled={!isValid}>
           {t('back_call.button')}
         </button>
       </form>
+      <ToastContainer />
     </div>
   );
 }
 
 export default BackCall;
-
