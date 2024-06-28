@@ -2,9 +2,9 @@ import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const sendEmail = (form) => {
-  const { REACT_APP_YOUR_SERVICE_ID, REACT_APP_YOUR_TEMPLATE_ID, REACT_APP_YOUR_PUBLIC_KEY } = process.env;
+  const { REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_PUBLIC_KEY } = process.env;
   
-  return emailjs.sendForm('REACT_APP_YOUR_SERVICE_ID', REACT_APP_YOUR_TEMPLATE_ID, form, REACT_APP_YOUR_PUBLIC_KEY)
+  return emailjs.sendForm(REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, form, REACT_APP_PUBLIC_KEY)
   .then(
       () => {
           toast.success("send", {
@@ -12,8 +12,7 @@ const sendEmail = (form) => {
             });
         },
         (error) => {
-            console.log('env: ', REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, process.env.REACT_APP_YOUR_PUBLIC_KEY)
-            toast.error("not send", {
+            toast.error("not send ", {
             position:"top-center",
           });
       }
