@@ -7,7 +7,7 @@ function AboutUs() {
     <div className="aboutUs-container">
       <h1 className="aboutUs-title">{t('who_we_are.title')}</h1>
       <div className="aboutUs-text-wrapper">
-<p className="aboutUs-text"> {`secrets.REACT_APP_PUBLIC_KEY`}
+<p className="aboutUs-text"> 
      
        {t('who_we_are.text')}
         </p>
