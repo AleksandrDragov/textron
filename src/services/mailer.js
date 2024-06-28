@@ -12,7 +12,7 @@ const sendEmail = (form) => {
             });
         },
         (error) => {
-            console.log('env: ', process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, process.env.REACT_APP_YOUR_PUBLIC_KEY)
+            console.log('env: ', REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, process.env.REACT_APP_YOUR_PUBLIC_KEY)
             toast.error("not send", {
             position:"top-center",
           });
