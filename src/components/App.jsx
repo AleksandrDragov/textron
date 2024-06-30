@@ -19,11 +19,11 @@ const ProjectsDetails = lazy(() =>
 export const App = () => {
   return (
     <div className="container">
+          <Suspense fallback={<Loader />}>
       {' '}
       <Header />
       <div className="app-shadow-wrapper">
         <MainContainer>
-          <Suspense fallback={<Loader />}>
             {' '}
             <Routes>
               <Route path="/" element={<Home />} />
@@ -33,13 +33,13 @@ export const App = () => {
           
               <Route path="/project/:id" element={<ProjectsDetails />} />
             </Routes>
-          </Suspense>
         </MainContainer>
          <Scrollup />
         <Partners />
         <BackCall />
         <Footer />
       </div>
+          </Suspense>
     </div>
   );
 };
