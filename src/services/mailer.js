@@ -2,7 +2,7 @@ import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { configDotenv } from 'dotenv';
+import 'dotenv/config'
 
 const sendEmail = (form) => {
   const { REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_PUBLIC_KEY } = process.env;
