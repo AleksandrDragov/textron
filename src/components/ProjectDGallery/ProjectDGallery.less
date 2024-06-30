@@ -1,0 +1,41 @@
+@import '../../variables.less';
+.project-details-gallery {
+    width: 80%;
+    height: auto;
+    box-sizing: border-box;
+  text-align: center;
+    @media screen and (min-width: 768px) {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+    @media screen and (max-width: 500px) {
+     width: 100%;
+    }
+  }
+  .projectDetails-gallery-title{
+    .text();
+    font-weight: 700;
+    font-size: 34px;
+  }
+  .project-details-gallery-item {
+    width: 75%;
+    background-size: contain;
+    border-radius: 5%;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    --swiper-navigation-size: 34px;
+    color: @black;
+    &:hover {
+      .hover();
+    }
+    @media screen and (min-width: 767px) {
+      --swiper-navigation-size: 54px;
+    }
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: @black;
+  }
+  
