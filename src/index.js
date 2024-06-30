@@ -6,7 +6,7 @@ import './index.less';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/building-Indusri">
+    <BrowserRouter basename="/textron">
       <App />
     </BrowserRouter>
   </React.StrictMode>

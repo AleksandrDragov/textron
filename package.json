@@ -2,7 +2,7 @@
   "name": "react-homework-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AleksandrDragov.github.io/building-Indusri/",
+  "homepage": "https://AleksandrDragov.github.io/textron",
   "dependencies": {
     "@craco/craco": "^7.1.0",
     "@emailjs/browser": "^4.3.3",
