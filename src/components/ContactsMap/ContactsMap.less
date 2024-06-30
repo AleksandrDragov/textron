@@ -1,0 +1,32 @@
+@import'../../variables.less';
+.contacts-map {
+    position: relative;
+    .loader-container {
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .contacts-map {
+    background-color: #e0e0e0;
+    height: 350px;
+    width: 350px;
+    border-radius: 5%;
+    @media screen and (max-width: 768px) {
+      max-height: 300px;
+      max-width: 300px;
+    }
+  }
+  .contacts-iframe-map {
+    height: 350px;
+    width: 350px;
+    border: 0;
+    border-radius: 5%;
+    @media screen and (max-width: 768px) {
+      max-height: 300px;
+      max-width: 300px;
+    }
+  }
+  
