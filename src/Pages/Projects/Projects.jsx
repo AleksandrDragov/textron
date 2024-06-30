@@ -1,8 +1,11 @@
 import React from 'react';
+
 import './Projects.less';
+
 import Hero from 'components/Hero/Hero';
-import { useTranslation } from 'react-i18next';
 import ProjectCards from 'components/ProjectCard/ProjectCard';
+
+import { useTranslation } from 'react-i18next';
 function Projects() {
  const {t}= useTranslation()
   return (

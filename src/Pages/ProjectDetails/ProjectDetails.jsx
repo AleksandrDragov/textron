@@ -1,12 +1,13 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { projectData } from 'data/projectsData';
-import Hero from 'components/Hero/Hero';
 import './ProjectDetails.less';
 import { useTranslation } from 'react-i18next';
-import ProjectDGallery from 'components/ProjectDGallery/ProjectDGallery';
+
+import Hero from 'components/Hero/Hero';
 import ProjectDResponsibility from 'components/ProjectDResponsibility/ProjectDResponsibility';
 import ProjectDAreaTime from 'components/ProjectDAT/ProjectDAreaTime';
+import ProjectDGallery from 'components/ProjectDGallery/ProjectDGallery';
 function ProjectDetails() {
   const { id } = useParams();
   const { t } = useTranslation();

@@ -1,7 +1,8 @@
 import './Contacts.less';
+
+import Hero from 'components/Hero/Hero';
 import ContactsContacts from 'components/ContactsContacts/ContactsContacts';
 import ContactsMap from 'components/ContactsMap/ContactsMap';
-import Hero from 'components/Hero/Hero';
 
 import { useTranslation } from 'react-i18next';
 function Contacts() {
