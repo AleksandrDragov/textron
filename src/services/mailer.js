@@ -7,7 +7,7 @@ import 'dotenv/config'
 const sendEmail = (form) => {
   const { REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_PUBLIC_KEY } = process.env;
   
-  return emailjs.sendForm(REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, form, REACT_APP_PUBLIC_KEY)
+  return emailjs.sendForm( REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, form, REACT_APP_PUBLIC_KEY)
   .then(
       () => {
           toast.success("send", {
@@ -15,7 +15,7 @@ const sendEmail = (form) => {
             });
         },
         (error) => {
-          console.log(REACT_APP_PUBLIC_KEY, REACT_APP_SERVICE_ID,REACT_APP_TEMPLATE_ID)
+          console.log( 'env: '+  REACT_APP_PUBLIC_KEY, REACT_APP_SERVICE_ID,REACT_APP_TEMPLATE_ID)
             toast.error("not send ", {
             position:"top-center",
             
