@@ -2,7 +2,7 @@ import './Header.less';
 import React, { useState } from 'react';
 import { NavLink} from 'react-router-dom';
 import Icon from 'utils/Icon';
-import LangSelect from 'languages/LanguageSelect/LangSelect';
+import LanguagesSwiper from 'languages/LanguageSelect/LangSelect';
 import { useTranslation } from 'react-i18next';
 import 'languages/i18n';
 function Header() {
@@ -52,7 +52,7 @@ function Header() {
         {t("header.contacts")}
         </NavLink> 
           
-        <LangSelect/>
+        <LanguagesSwiper/>
       </nav>
     </header>
   );
