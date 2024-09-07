@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "textron",
+  "name": "textron",
+  "description": "Textron - tvoje nejlepší stavební služby",
   "icons": [
     {
       "src": "favicon.ico",
