@@ -58,8 +58,6 @@ export const projectData = [
       images['services-image-1.png'],
       images['services-image-1.png'],
       images['services-image-1.png'],
-      "https://shorturl.at/MgfuC",
-      "https://shorturl.at/gAYk1",
     ],
   },
 ];

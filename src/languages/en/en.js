@@ -8,7 +8,7 @@ export const en = {
 },
     who_we_are:{
     title: "Who we are?",
-    text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting",
+    text:"Textron Ipsum is simply dummy text of the printing and typesetting industry. Textron Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting",
 },
     why_chose_us:{
     title:"Why chose us?",
@@ -48,16 +48,16 @@ export const en = {
     project_details_1:{
         name:'hotel 987 - 1',
         preTitle:'reconstruction Hotel 987',
-        description:"Lorem Ipsum 'klnwelgnkwn 'gnw  ngl'nG NG' n kw is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five  centuries ",      
+        description:"Textron Ipsum 'klnwelgnkwn 'gnw  ngl'nG NG' n kw is simply dummy text of the printing and typesetting industry. Textron Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five  centuries ",      
     },
     project_details_2:{
         name:'hotel 987 - 1',
         preTitle:'reconstruction Hotel 987',
-        description:"Lorem Ipsum 'klnwelgnkwn 'gnw  ngl'nG NG' n kw is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five  centuries ",      
+        description:"Textron Ipsum 'klnwelgnkwn 'gnw  ngl'nG NG' n kw is simply dummy text of the printing and typesetting industry. Textron Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five  centuries ",      
     }, project_details_3:{
         name:'hotel 987 - 1',
         preTitle:'reconstruction Hotel 987',
-        description:"Lorem Ipsum 'klnwelgnkwn 'gnw  ngl'nG NG' n kw is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five  centuries ",      
+        description:"Textron Ipsum 'klnwelgnkwn 'gnw  ngl'nG NG' n kw is simply dummy text of the printing and typesetting industry. Textron Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five  centuries ",      
     },
     errors:{
         empty:"This field cannot be empty or contain only spaces",

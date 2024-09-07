@@ -5,6 +5,7 @@ import Icon from 'utils/Icon';
 import LanguagesSwiper from 'languages/LanguageSelect/LangSelect';
 import { useTranslation } from 'react-i18next';
 import 'languages/i18n';
+
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const{t} = useTranslation();
@@ -22,15 +23,15 @@ function Header() {
       <NavLink to="/" className="header-logo">
         <Icon
           id="textron-logo"
-          width={150}
-          height={150}
+          width={250}
+          height={200}
           className="header-logo-icon"
         />
       </NavLink>
       <div
         className={`BurgerIcon ${menuOpen ? 'open' : ''}`}
         onClick={toggleMenu}
-      >
+        >
         <div className={`burger-line ${menuOpen ? 'open' : ''}`}></div>
         <div className={`burger-line ${menuOpen ? 'open' : ''}`}></div>
         <div className={`burger-line ${menuOpen ? 'open' : ''}`}></div>
@@ -38,7 +39,7 @@ function Header() {
       <nav
         className={`header-navigation ${menuOpen ? 'open' : ''}`}
         data-menu-open={menuOpen}  
-      >
+        >
         <NavLink className="nav-item" to="/" onClick={closeMenu}>
           {t("header.home")}
         </NavLink>
