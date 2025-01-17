@@ -1,12 +1,20 @@
 const importAll = (r) => {
-    let images = {};
-    r.keys().forEach((item) => { 
-      images[item.replace('./', '')] = r(item); 
-    });
-    return images;
-  };
+  let images = {};
+
+  r.keys().forEach((item) => {
+   
+    const fileName = item.split('/').pop();
+ 
+    const folderName = item.includes('/') ? item.split('/')[1] : null;
+
   
-  const images = importAll(require.context('../images', false, /\.(png|jpe?g|svg)$/));
-  
-  export default images;
+    images[fileName] = folderName ? [r(item), folderName] : [r(item)];
+  });
+
+  return images;
+};
+
+const images = importAll(require.context('../images', true, /\.(png|jpe?g|svg)$/));
+
+export default images; 
   

@@ -1,35 +1,90 @@
 @import '../../variables.less';
+
 .services-card-wrapper {
-    .flex();
-    flex-direction: column;
-    max-width: 300px;
-    flex-wrap: wrap;
-    border-radius: 10px;
-    box-sizing: content-box;
-    text-align: center;
-    .card-shadow();
-    &:not(:last-child) {
-      margin-bottom: 40px;
+  .flex();
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 330px;
+  height: 310px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  .card-shadow();
+  perspective: 1000px; 
+  @media screen and (min-width: 768px) {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+  }
+
+  .service-card-inner {
+    position: relative;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    .service-card-img, .service-card-back {
+      backface-visibility: hidden; 
     }
-    @media screen and (min-width: 768px) {
-      & {
-        margin-bottom: 40px;
+    &.flipped {
+      transform: rotateY(180deg);
+      .service-card-click {
+        display: none; 
       }
     }
   }
+
   .service-card-img {
-    max-width: 300px;
+    .text();
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    margin-bottom: 10px;
   }
-  .service-card-text {
+
+  .service-card-click {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     .text();
-    max-width: 250px;
-    font-size: 16px;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 600;
+  
+
+    z-index: 1; 
+    transition: opacity 0.6s;
+  }
+
+  .service-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px;
+    transform: rotateY(180deg); 
+  }
+
+  .service-card-text {
+    margin-top: 10px;
+    .text();
+    width: 250px;
+    font-size: 18px;
     font-weight: 400;
     .grayish();
-    margin-bottom: 10px;
-    padding: 10px;
+    margin-bottom: 20px;
+
   }
-  
+}

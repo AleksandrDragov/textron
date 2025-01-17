@@ -1,24 +1,19 @@
 {
   "short_name": "textron",
-  "name": "textron",
-  "description": "Textron - tvoje nejlepší stavební služby",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
+  "name": "Textron s.r.o",
+  "description": "Jsme stavební firma s citem pro detail | Kompletní rekonstrukce bytů a rodinných domů v Praze a okoli",
+  "short_description": "Stavební služby s kvalitními projekty",
+  "lang": "cs",
+  "keywords": "stavební služby, rekonstrukce, novostavba, realizace",
+  "homepage_url": "https://textron.cz",
+    "manifest_version": 3,
+    "version":"1.0",
+  "icons": {
+      "16": "logotype16.png",
+      "32": "logotype32.png",
+      "64": "logotype64.png",
+      "128": "logotype128.png"
+  },
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

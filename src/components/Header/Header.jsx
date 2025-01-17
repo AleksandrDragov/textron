@@ -52,6 +52,9 @@ function Header() {
         <NavLink className="nav-item" to="/contacts" onClick={closeMenu}>
         {t("header.contacts")}
         </NavLink> 
+        {/* <NavLink className="nav-item" to="/review" onClick={closeMenu}>
+        {t("header.contacts")}
+        </NavLink>  */}
           
         <LanguagesSwiper/>
       </nav>

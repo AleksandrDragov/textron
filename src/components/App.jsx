@@ -3,15 +3,18 @@ import Loader from '../utils/Loader/Loader';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import MainContainer from './MainContainer/MainContainer';
-import Partners from './Partners/Partners';
+// import Partners from './Partners/Partners';
 import BackCall from './BackCall/BackCall';
 import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Scrollup from 'utils/ScrollUp/scrollup';
+import Adverstising from './Adverstising/Adverstising';
 const Home = lazy(() => import('../Pages/HomePage/HomePage'));
 const Contacts = lazy(() => import('../Pages/Contacts/Contacts'));
 const Services = lazy(() => import('../Pages/Services/Services'));
 const Projects = lazy(() => import('../Pages/Projects/Projects'));
+// const Reviews = lazy(() => import('../Pages/Reviews/Reviews'));
+
 
 const ProjectsDetails = lazy(() =>
   import('../Pages/ProjectDetails/ProjectDetails')
@@ -30,14 +33,17 @@ export const App = () => {
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/services" element={<Services />} />
               <Route path="/projects" element={<Projects />} />
+              {/* <Route path="/review" element={<Reviews />} /> */}
+
           
               <Route path="/project/:id" element={<ProjectsDetails />} />
             </Routes>
         </MainContainer>
          <Scrollup />
-        <Partners />
+        {/* <Partners /> */}
         <BackCall />
         <Footer />
+        <Adverstising />
       </div>
           </Suspense>
     </div>

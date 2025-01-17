@@ -23,7 +23,7 @@ function ProjectDetails() {
       <div className="project-details-info">
         <div className="projectDetails-info-wrapper">
         <ProjectDResponsibility descriptionKey={project.descriptionKey} />
-         <ProjectDAreaTime area={project.area} days={project.days}/>
+         {/* <ProjectDAreaTime area={project.area} days={project.days}/> */}
         </div>
         <ProjectDGallery gallery={project.gallery} nameKey={project.nameKey} />
       </div>

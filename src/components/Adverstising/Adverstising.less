@@ -1,0 +1,43 @@
+@import '../../variables.less';
+.adverstising-container{
+  .flex();
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  .containers();
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  background-color: black;
+}
+.adverstising-title{
+    .text();
+    color: @white;
+    font-weight: 700;
+    font-size: 16px;
+}
+.adverstising-text{
+    .text();
+    color: @white;
+    font-size: 12px;
+}
+.adverstising-list{
+    .flex();
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: flex-start;
+}
+.adverstising-item{
+    .text();
+    color: @white;
+    list-style: none;
+    font-size: 12px;
+}

@@ -1,7 +1,9 @@
 const CracoLessPlugin = require('craco-less');
 const webpack = require('webpack');
+
 module.exports = {
   webpack: {
+    
     configure: (webpackConfig) => {
       webpackConfig.resolve.fallback = {
         ...webpackConfig.resolve.fallback,
@@ -18,13 +20,14 @@ module.exports = {
         ...webpackConfig.plugins,
         new webpack.ProvidePlugin({
           Buffer: ['buffer', 'Buffer'],
-          process: 'process/browser'
-        })
+          process: 'process/browser',
+        }),
       ];
 
       return webpackConfig;
     },
   },
+ 
   plugins: [
     {
       plugin: CracoLessPlugin,

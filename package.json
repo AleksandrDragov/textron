@@ -64,6 +64,10 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "craco-alias": "^3.0.1",
+    "file-loader": "^6.2.0",
+    "image-webpack-loader": "^8.1.0",
+    "mozjpeg": "^8.0.0",
+    "pngquant": "^4.2.0",
     "process": "^0.11.10",
     "react-app-rewired": "^2.2.1",
     "stream-browserify": "^3.0.0"

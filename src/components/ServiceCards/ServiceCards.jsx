@@ -1,45 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './ServiceCards.less';
-import serviceImage from '../../images/services-image-1.png';
+import { serviceCardsData } from 'data/servicesData';
 
 function ServiceCards() {
   const { t } = useTranslation();
+  
+ 
+  const [flipped, setFlipped] = useState({});
+
+  const handleFlip = (id) => {
+    setFlipped((prevFlipped) => ({
+      ...prevFlipped,
+      [id]: !prevFlipped[id] 
+    }));
+  };
 
   return (
     <div className="service-card-container">
-      <div className="services-card-wrapper">
-        <img
-          className="service-card-img"
-          src={serviceImage}
-          alt="Reconstruction"
-        />
-        <p className="service-card-text">{t('services.description_1')}</p>
-      </div>
-      <div className="services-card-wrapper">
-        <img
-          className="service-card-img"
-          src={serviceImage}
-          alt="Reconstruction"
-        />
-        <p className="service-card-text">{t('services.description_2')}</p>
-      </div>
-      <div className="services-card-wrapper">
-        <img
-          className="service-card-img"
-          src={serviceImage}
-          alt="Reconstruction"
-        />
-        <p className="service-card-text">{t('services.description_3')}</p>
-      </div>
-      <div className="services-card-wrapper">
-        <img
-          className="service-card-img"
-          src={serviceImage}
-          alt="Reconstruction"
-        />
-        <p className="service-card-text">{t('services.description_4')}</p>
-      </div>
+      {serviceCardsData.map((card) => (
+        <div
+          key={card.id}
+          className="services-card-wrapper"
+          onClick={() => handleFlip(card.id)} 
+        >
+          <div className={`service-card-inner ${flipped[card.id] ? 'flipped' : ''}`}>
+            <img
+              className="service-card-img"
+              src={card.image}
+              alt={t(card.descriptionKey)}
+            />
+          <p className="service-card-click">{t('services.click_text')}</p>
+            <div className="service-card-back">
+              {t(card.flippedTextKey)}
+            </div>
+          </div>
+          <p className="service-card-text">{t(card.descriptionKey)}</p>
+
+
+        </div>
+      ))}
     </div>
   );
 }

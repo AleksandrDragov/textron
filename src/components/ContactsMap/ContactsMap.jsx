@@ -19,7 +19,7 @@ export default function ContactsMap() {
             <iframe
               title="contacts-iframe"
               className="contacts-iframe-map"
-              src="https://maps.google.com/maps?width=300&amp;height=300&amp;hl=en&amp;q=Senov%C3%A1%C5%BEn%C3%A9%20n%C3%A1m.%20987/15,%20110%2000%20Nov%C3%A9%20M%C4%9Bsto+(987)&amp;t=h&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=5%20kv%C4%9Btna%201007/3%20140%2000%20Praha%204%20-%20Nusle+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
               onLoad={handleMapLoad}
             ></iframe>
           </a>

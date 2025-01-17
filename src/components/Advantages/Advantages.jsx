@@ -38,10 +38,10 @@ function Advantages() {
         </div>
         <div className="advantages-text-wrapper">
           <Icon
-            id="constructing"
-            width={100}
-            height={100}
-            className="advantages-icon"
+            id="magnifier"
+            width={90}
+            height={90}
+            className="advantages-icon magnifier"
           />
           <p className="advantages-main-text">
           {t('why_chose_us.text_3')}
